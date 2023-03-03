@@ -1,5 +1,5 @@
-function [dsFiltered] = HPFSandDS(sample)
-    filtered = HPFilterSample(sample);
+function [dsFiltered] = HPFSandDS(sample,fs)
+    filtered = HPFilterSample(sample,fs);
     dsFiltered = downsample(filtered,2);
 end
 
