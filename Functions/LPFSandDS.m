@@ -1,5 +1,5 @@
-function [dsFiltered] = LPFSandDS(sample,fs)
-    filtered = LPFilterSample(sample,fs);
+function [dsFiltered] = LPFSandDS(sample,fs,FS)
+    filtered = LPFilterSample(sample,fs,FS);
     dsFiltered = downsample(filtered,2);
 end
 

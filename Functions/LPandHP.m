@@ -1,5 +1,5 @@
-function [LP,HP] = LPandHP(sample,fs)
-    LP = LPFSandDS(sample,fs);
-    HP = HPFSandDS(sample,fs);
+function [LP,HP] = LPandHP(sample,fs,FS)
+    LP = LPFSandDS(sample,fs,FS);
+    HP = HPFSandDS(sample,fs,FS);
 end
 
